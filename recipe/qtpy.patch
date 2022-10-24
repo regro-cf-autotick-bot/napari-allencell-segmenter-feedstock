@@ -1,0 +1,25 @@
+diff --git a/napari_allencell_segmenter/_tests/widgets/workflow_step_widget_test.py b/napari_allencell_segmenter/_tests/widgets/workflow_step_widget_test.py
+index 1ba139e..b53f921 100644
+--- a/napari_allencell_segmenter/_tests/widgets/workflow_step_widget_test.py
++++ b/napari_allencell_segmenter/_tests/widgets/workflow_step_widget_test.py
+@@ -9,7 +9,7 @@ from aicssegmentation.workflow import (
+     WidgetType,
+     WorkflowStepCategory,
+ )
+-from PyQt5.QtWidgets import QComboBox, QPushButton
++from qtpy.QtWidgets import QComboBox, QPushButton
+ from napari_allencell_segmenter.widgets.workflow_step_widget import WorkflowStepWidget
+ from unittest.mock import MagicMock, create_autospec
+ 
+diff --git a/napari_allencell_segmenter/widgets/workflow_step_widget.py b/napari_allencell_segmenter/widgets/workflow_step_widget.py
+index 4e61d2f..0db5324 100644
+--- a/napari_allencell_segmenter/widgets/workflow_step_widget.py
++++ b/napari_allencell_segmenter/widgets/workflow_step_widget.py
+@@ -1,6 +1,6 @@
+ import copy
+ from typing import Any, Dict, List, Union
+-from PyQt5.QtWidgets import QComboBox, QPushButton, QFrame, QHBoxLayout
++from qtpy.QtWidgets import QComboBox, QPushButton, QFrame, QHBoxLayout
+ 
+ from aicssegmentation.workflow import WorkflowStep, FunctionParameter, WidgetType
+ from magicgui.widgets import Slider
