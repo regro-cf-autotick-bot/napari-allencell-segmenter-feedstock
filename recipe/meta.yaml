@@ -8,6 +8,8 @@ package:
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/napari-allencell-segmenter-{{ version }}.tar.gz
   sha256: 1f111b6f615b989f165d5cc10ef537c0b26bc1d11cddc8eb58966c2a89688661
+  patches:
+    - qtpy.patch  # Use qtpy instead of PyQt5
 
 build:
   noarch: python
