@@ -1,5 +1,5 @@
 {% set name = "napari-allencell-segmenter" %}
-{% set version = "2.1.8" %}
+{% set version = "2.1.9" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/napari-allencell-segmenter-{{ version }}.tar.gz
-  sha256: fbdea17b1e8dd6476a577806d387934a8165a09a583c3ec848caf1d5c25cb0fd
+  sha256: 4a1f008be6f1382370aa4dddfa3624a2a384dba9de032c6816e8cbe5ae52cdea
   patches:
     - qtpy.patch  # Use qtpy instead of PyQt5
 
