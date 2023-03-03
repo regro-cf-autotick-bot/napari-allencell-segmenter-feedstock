@@ -1,11 +1,11 @@
-About napari-allencell-segmenter
-================================
+About napari-allencell-segmenter-feedstock
+==========================================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/napari-allencell-segmenter-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/AllenCell/napari-allencell-segmenter
 
 Package license: BSD-3-Clause
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/napari-allencell-segmenter-feedstock/blob/main/LICENSE.txt)
 
 Summary: A plugin that enables 3D image segmentation provided by Allen Institute for Cell Science
 
