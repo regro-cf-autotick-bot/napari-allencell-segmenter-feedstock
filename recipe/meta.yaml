@@ -22,13 +22,15 @@ requirements:
     - setuptools-scm
   run:
     - aicsimageio >=4.0.5
-    - aicssegmentation >=0.4.1
+    - aicssegmentation >=0.5.0
     - magicgui >=0.2.9
     - napari >=0.4.9
     - napari-plugin-engine >=0.1.4
     - numpy
     - opencv >=4.5.1
     - python >=3.7
+    - importlib-metadata
+    - ome-zarr
 
 test:
   imports:
