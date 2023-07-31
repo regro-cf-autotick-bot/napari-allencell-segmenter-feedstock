@@ -1,5 +1,5 @@
 {% set name = "napari-allencell-segmenter" %}
-{% set version = "2.1.11" %}
+{% set version = "2.1.12" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/napari-allencell-segmenter-{{ version }}.tar.gz
-  sha256: f279257a518d1992a23e1afea68bcf6b0e42d709cec95058f6ae8732039715d4
+  sha256: acd1e7bcc5ed6437dbc9dbca29a37071d87d69033408bf61c175f6c529335aaf
 
 build:
   noarch: python
@@ -22,15 +22,17 @@ requirements:
     - setuptools-scm
   run:
     - aicsimageio >=4.0.5
-    - aicssegmentation >=0.5.0
+    - aicssegmentation >=0.5.3
+    - importlib-metadata ==4.11.4
     - magicgui >=0.2.9
     - napari >=0.4.9
     - napari-plugin-engine >=0.1.4
+    - npe2
     - numpy
+    - ome-zarr
     - opencv >=4.5.1
     - python >=3.7
-    - importlib-metadata
-    - ome-zarr
+    - qtpy
 
 test:
   imports:
