@@ -6,19 +6,19 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/napari-allencell-segmenter-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/napari-allencell-segmenter-{{ version }}.tar.gz
   sha256: acd1e7bcc5ed6437dbc9dbca29a37071d87d69033408bf61c175f6c529335aaf
 
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
-  number: 0
+  number: 1
 
 requirements:
   host:
     - pip
     - pytest-runner
-    - python >=3.7
+    - python {{ python_min }}
     - setuptools-scm
   run:
     - aicsimageio >=4.0.5
@@ -31,7 +31,7 @@ requirements:
     - numpy
     - ome-zarr
     - opencv >=4.5.1
-    - python >=3.7
+    - python >={{ python_min }}
     - qtpy
 
 test:
@@ -42,6 +42,7 @@ test:
     # - pip check
   requires:
     - pip
+    - python {{ python_min }}
 
 about:
   home: https://github.com/AllenCell/napari-allencell-segmenter
